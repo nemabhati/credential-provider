@@ -1,0 +1,4 @@
+HKEY_LOCAL_MACHINE\SOFTWARE\BiometricCredentialProvider\AIEndpoint = "https://your-ai-model.com/api/authenticate"
+HKEY_LOCAL_MACHINE\SOFTWARE\BiometricCredentialProvider\APIKey = "your-api-key"
+
+https://www.perplexity.ai/search/i-want-to-integrate-the-behavi-NImbcVJmTDGQkWyZKk_MEQ

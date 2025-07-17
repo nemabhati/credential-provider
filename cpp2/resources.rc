@@ -1,0 +1,45 @@
+#include "resource.h"
+#include <windows.h>
+
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+
+// String table
+STRINGTABLE
+BEGIN
+    IDS_PROVIDER_LABEL          "Biometric Authentication"
+    IDS_PROVIDER_DESCRIPTION    "Enhanced Security Login with Keystroke Analysis"
+    IDS_USERNAME_LABEL          "Username"
+    IDS_PASSWORD_LABEL          "Password"
+    IDS_SUBMIT_LABEL            "Sign in"
+    IDS_BIOMETRIC_STATUS        "Ready for authentication"
+END
+
+// Version information
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION     VER_FILEVERSION
+PRODUCTVERSION  VER_PRODUCTVERSION
+FILEFLAGSMASK   VS_FFI_FILEFLAGSMASK
+FILEFLAGS       VS_FF_DEBUG
+FILEOS          VOS_NT_WINDOWS32
+FILETYPE        VFT_DLL
+FILESUBTYPE     VFT2_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName",        "Your Company Name"
+            VALUE "FileDescription",   "Biometric Windows Credential Provider"
+            VALUE "FileVersion",       VER_FILEVERSION_STR
+            VALUE "InternalName",      "SampleV2CredentialProvider.dll"
+            VALUE "LegalCopyright",    "Copyright (C) 2024"
+            VALUE "OriginalFilename",  "SampleV2CredentialProvider.dll"
+            VALUE "ProductName",       "Biometric Credential Provider"
+            VALUE "ProductVersion",    VER_PRODUCTVERSION_STR
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
